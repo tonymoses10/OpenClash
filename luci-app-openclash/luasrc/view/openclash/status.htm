@@ -227,16 +227,12 @@
 </table>
 </fieldset>
 <fieldset id="state" class="cbi-section">
-	<table width="100%">
-		<tr><td width="100%" colspan="4">
-			<p style="margin: 10px 0; text-align: center">
-				<b><%:Please ensure that all items are displayed normally before running. If you need to update, please go to the global settings page%></b>
-			</p>
-		</td></tr>
-		<tr><td width="25%"><%:Node Select Backup%></td><td width="25%" align="left" id="_historychecktime"><%:Collecting data...%></td><td width="25%"><%:lhie1 Rule Update%></td><td width="25%" align="left" id="_lhie1"><%:Collecting data...%></td></tr>
-		<tr><td width="25%"><%:Mainland IP Update%></td><td width="25%" align="left" id="_chnroute"><%:Collecting data...%></td><td width="25%"><%: Mainland IPv6 Update%></td><td width="25%" align="left" id="_chnroutev6"><%:Collecting data...%></td></tr>
-		<tr><td width="25%"><%:GeoIP Data Update%></td><td width="25%" align="left" id="_ipdb"><%:Collecting data...%></td><td width="25%"><%:GeoSite Data Update%></td><td width="25%" align="left" id="_geosite"><%:Collecting data...%></td></tr>
-	</table>
+<table style="margin: 0 auto; text-align: center; width: 80%;">
+        <tr><td colspan="4" style="margin: 10px 0; text-align: center; font-weight: bold;"><%:Please ensure that all items are displayed normally before running. If you need to update, please go to the global settings page%></td></tr>
+        <tr><td width="25%"><%:Node Select Backup%></td><td width="25%" id="_historychecktime" align="left"><%:Collecting data...%></td><td width="25%"><%:lhie1 Rule Update%></td><td width="25%" id="_lhie1" align="left"><%:Collecting data...%></td></tr>
+	<tr><td width="25%"><%:Mainland IP Update%></td><td width="25%" id="_chnroute" align="left"><%:Collecting data...%></td><td width="25%"><%: Mainland IPv6 Update%></td><td width="25%" id="_chnroutev6" align="left"><%:Collecting data...%></td></tr>
+	<tr><td width="25%"><%:GeoIP Data Update%></td><td width="25%" id="_ipdb" align="left"><%:Collecting data...%></td><td width="25%"><%:GeoSite Data Update%></td><td width="25%" id="_geosite" align="left"><%:Collecting data...%></td></tr>
+    </table>
 </fieldset>
 <script type="text/javascript">//<![CDATA[
 	var clash = document.getElementById('_clash');
@@ -567,7 +563,7 @@
 					var contentWidth = content.offsetWidth;
 					content.style.left = bannerWidth + 'px';
 					
-					var speed = 3;
+					var speed = 1;
 					var position = bannerWidth;
 					var pauseCounter = 0;
 					var pauseDuration = 20;
